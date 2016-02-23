@@ -94,9 +94,9 @@ public class Bill {
         }
         
         WindowListener wListener = new WindowListener();
-        Timer wTimer = new Timer(275, wListener);
+        Timer wTimer = new Timer(500, wListener);
         wTimer.start();
-        String musicpath = Bill.class.getResource("/music/bill2.wav").toString();
+        String musicpath = Bill.class.getResource("/music/bill.mp3").toString();
         Media media = new Media(musicpath);
         MediaPlayer mp = new MediaPlayer(media);
         mp.play();
